@@ -1,4 +1,4 @@
-package Phan2;
+package Phan1;
 
 public class KhaiBaoVaDungBien {
     public static void main(String[] args) {
