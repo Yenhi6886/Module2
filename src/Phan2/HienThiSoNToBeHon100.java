@@ -2,26 +2,20 @@ package Phan2;
 
 import java.util.Scanner;
 
-public class HienSoNguyenTo {
+public class HienThiSoNToBeHon100 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("So luong so nguyen to");
-        int numbers = sc.nextInt();
-
-        int count = 0;
-        int N=2;
-
-        while (count<numbers) {
+        System.out.println("Hiển thị các số nguyên tố bé hơn 100");
+        int N = 2;
+        while (N<100) {
             if (KiemTraSoNguyenTo(N)) {
-                count++;
-                System.out.print(count+ " ");
+                System.out.print(N + " ");
             }
             N++;
         }
-        sc.close();
     }
+
     public static boolean KiemTraSoNguyenTo(int num) {
-        if (num <2) {
+        if (num < 2) {
             return false;
         }
         for (int i = 2; i <= Math.sqrt(num); i++) {
